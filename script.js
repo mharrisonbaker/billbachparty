@@ -19,6 +19,10 @@ const countdown = () => {
 setInterval(countdown, 1000);
 
 
+document.querySelector('button').addEventListener('click', function() {
+  document.getElementById('email-dialog').style.display = 'block';
+});
+
 document.getElementById('email-submit').addEventListener('click', function() {
   var email = document.getElementById('email-input').value;
   var emails = {
@@ -33,3 +37,4 @@ document.getElementById('email-submit').addEventListener('click', function() {
     alert('Invalid email');
   }
 });
+
