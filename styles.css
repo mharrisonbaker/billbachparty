@@ -1,3 +1,9 @@
+body {
+  background-image: url('as11-44-6551~orig.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body, html {
     margin: 0;
     padding: 0;
