@@ -25,16 +25,30 @@ document.querySelector('button').addEventListener('click', function() {
 
 document.getElementById('email-submit').addEventListener('click', function() {
   var email = document.getElementById('email-input').value;
-  var emails = {
-    'edsteinborn@gmail.com': 'ed-steinborn.html',
-    'stetson.hallowell@gmail.com': 'stetson-hallowell.html',
-    'matthew.karlan@gmail.com': 'matt-karlan.html',
-    // add other emails and corresponding pages here
-  };
-  if (emails.hasOwnProperty(email)) {
-    window.location.href = emails[email];
+  var emails = [
+  'edsteinborn@gmail.com',
+  'stetson.hallowell@gmail.com',
+  'matthew.karlan@gmail.com',
+  'rgcanning@gmail.com',
+  'douglas.c.herling@gmail.com',
+  'drewaterfield@gmail.com',
+  'mbo5b1@gmail.com',
+  'brendanekelley@gmail.com',
+  'thomas.bennet@gmail.com',
+  'adam.klopp@gmail.com',
+  'michaeljledwith@gmail.com',
+  'franciscoahoyos@gmail.com',
+  'michael.barber06@gmail.com',
+  'jesse.salai@gmail.com',
+  'jcpeltier@gmail.com',
+  'paxtonflesher@gmail.com',
+  'tomgaunt@gmail.com',
+  'michaeljameswest@gmail.com'
+];
+  if (emails.includes(email)) {
+    window.location.href = 'second-page.html';
   } else {
-    alert('Invalid email');
+    document.getElementById('error-message').style.display = 'block';
   }
 });
 
