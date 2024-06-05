@@ -1,5 +1,3 @@
-console.log('Countdown clock script loaded');
-
 const countdown = () => {
     const countDate = new Date('October 10, 2023 00:00:00').getTime();
     const now = new Date().getTime();
