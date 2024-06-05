@@ -17,3 +17,19 @@ const countdown = () => {
 };
 
 setInterval(countdown, 1000);
+
+
+document.getElementById('email-submit').addEventListener('click', function() {
+  var email = document.getElementById('email-input').value;
+  var emails = {
+    'edsteinborn@gmail.com': 'ed-steinborn.html',
+    'stetson.hallowell@gmail.com': 'stetson-hallowell.html',
+    'matthew.karlan@gmail.com': 'matt-karlan.html',
+    // add other emails and corresponding pages here
+  };
+  if (emails.hasOwnProperty(email)) {
+    window.location.href = emails[email];
+  } else {
+    alert('Invalid email');
+  }
+});
